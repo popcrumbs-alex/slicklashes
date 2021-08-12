@@ -1,0 +1,23 @@
+.total_display_heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  & h2 {
+    font-weight: 700;
+    margin: 0;
+  }
+  & h1 {
+    margin: 0;
+    font-weight: 700;
+    color: #fff;
+    background: var(--analytics-data-1-faded);
+    border: 1.5px solid var(--analytics-data-1);
+    border-right: 0;
+    border-left: 0;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+}

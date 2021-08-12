@@ -1,0 +1,132 @@
+.section {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 7rem 0;
+  & .inner {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem 0;
+    & .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & h1 {
+        font-weight: 700;
+      }
+      & a {
+        color: var(--brand-main);
+      }
+      & button {
+        background: var(--brand-main);
+        color: #fff;
+        border: 0;
+        transition: all 0.3s ease;
+        padding: 1rem;
+        border-radius: 3px;
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 1px 10px var(--brand-main);
+        }
+      }
+    }
+    & .order_container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      justify-items: center;
+      border: 1px solid #eee;
+      margin-top: 2rem;
+      width: 80%;
+      & .col {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: 1px solid #eee;
+        & h1 {
+          width: 100%;
+          border-bottom: 1px solid #eee;
+          padding: 1rem 0;
+          text-align: center;
+          font-weight: 700;
+          font-size: 1.5rem;
+        }
+        & ul {
+          list-style: none;
+          & li {
+            margin: 0.5rem 0;
+            & span {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section {
+    & .inner {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 4rem 0;
+      & .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & h1 {
+          font-weight: 700;
+        }
+        & p {
+          text-align: center;
+        }
+        & a {
+          color: var(--brand-main);
+        }
+      }
+      & .order_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        justify-items: center;
+        border: 1px solid #eee;
+        margin-top: 2rem;
+        width: 80%;
+        & .col {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          & h1 {
+            width: 100%;
+            border-bottom: 1px solid #eee;
+            padding: 1rem 0;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+          }
+          & ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            & li {
+              margin: 0.5rem 0;
+              & span {
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

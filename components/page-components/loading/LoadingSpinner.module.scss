@@ -1,0 +1,31 @@
+.spinner {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  border-radius: 50%;
+  background: transparent;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  & p {
+    position: absolute;
+    font-size: 0.9rem;
+  }
+  & .barrier {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+    border: 2px solid transparent;
+    border-top: 2px solid var(--brand-main);
+    animation: spin 1s linear infinite;
+    animation-fill-mode: forwards;
+    border-radius: 50%;
+    position: absolute;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

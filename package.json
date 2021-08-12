@@ -1,0 +1,65 @@
+{
+  "name": "ecommerce-framework",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "compile:sass": "node-sass --include-path sass sass/main.scss   src/css/main.css"
+  },
+  "dependencies": {
+    "@paypal/react-paypal-js": "^5.1.2",
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.10.0",
+    "axios": "^0.19.2",
+    "braintree-web": "^3.77.0",
+    "braintree-web-drop-in-react": "^1.2.1",
+    "chart.js": "^2.9.4",
+    "framer-motion": "^2.9.4",
+    "imagekitio-react": "^1.0.9",
+    "moment": "^2.29.1",
+    "next": "^10.0.0",
+    "next-redux-wrapper": "^6.0.2",
+    "nextjs": "0.0.3",
+    "node-sass": "^4.14.1",
+    "paypal-checkout": "^4.0.328",
+    "react": "16.13.1",
+    "react-chartjs-2": "^2.11.1",
+    "react-dates": "^21.8.0",
+    "react-dom": "16.13.1",
+    "react-feather": "^2.0.8",
+    "react-ga": "^3.2.0",
+    "react-gtm-module": "^2.0.11",
+    "react-icons": "^3.11.0",
+    "react-intersection-observer": "^8.31.0",
+    "react-paypal-button-v2": "^2.6.3",
+    "react-player": "^2.9.0",
+    "react-redux": "^7.2.2",
+    "react-script-tag": "^1.1.2",
+    "react-share": "^4.3.1",
+    "react-with-styles": "^4.1.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "socket.io": "^3.0.3",
+    "socket.io-client": "^3.0.3",
+    "styled-components": "^5.2.3",
+    "uuid": "^8.3.1"
+  },
+  "description": "Ecommerce platform, utilizing next.js and shopify API for @popcrumbs LTD.",
+  "main": "index.js",
+  "devDependencies": {
+    "cypress": "^7.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexShiresRoth/popcrumbs-ecommerce-framework.git"
+  },
+  "author": "Alex Roth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexShiresRoth/popcrumbs-ecommerce-framework/issues"
+  },
+  "homepage": "https://github.com/AlexShiresRoth/popcrumbs-ecommerce-framework#readme"
+}

@@ -1,0 +1,89 @@
+.container {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-faded);
+  & .form_container {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px #ddd;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 40vw;
+    margin: 10rem;
+    & h1 {
+      font-weight: 700;
+    }
+    & .alert_row {
+      width: 100%;
+      display: flex;
+    }
+    & .inner_container {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      & form {
+        display: flex;
+        flex-direction: column;
+        & .form_row {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          margin: 0.5rem 0;
+          & label {
+            color: #999;
+            margin: 0.2rem 0;
+          }
+          & input {
+            padding: 1rem 0;
+            text-indent: 5px;
+            border: 2px solid #eee;
+            border-radius: 3px;
+            &:hover {
+              border: 2px solid var(--background);
+            }
+          }
+        }
+        & button {
+          min-height: 3rem;
+          background: var(--background-full);
+          border-radius: 3px;
+          color: #fff;
+          margin: 0.5rem 0;
+          border: 0;
+          transition: all 0.3s ease;
+          &:hover {
+            cursor: pointer;
+            background: var(--background);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-faded);
+    & .form_container {
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 1px 10px #ddd;
+      padding: 1rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 90vw;
+      margin: 13rem 0 5rem 0;
+    }
+  }
+}

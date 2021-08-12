@@ -1,0 +1,288 @@
+.section {
+  padding: 3rem 0;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    opacity: 0.8;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.7;
+  }
+  & .content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    background: #fff;
+    & .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: url("https://res.cloudinary.com/fillthevoidio/image/upload/q_65/v1616086813/pg/veterans-day-ceremony-in-japan_hvnvga.jpg");
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        background: #fff;
+        opacity: 0.7;
+      }
+      & h1 {
+        font-size: var(--mobile-heading-font-size);
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        max-width: 70%;
+        margin-top: 2rem;
+        z-index: 2;
+      }
+      & h3 {
+        font-size: var(--mobile-sub-heading-font-size);
+        text-align: center;
+        color: var(--text-dark);
+        margin: 1rem 0;
+        z-index: 2;
+      }
+    }
+    & .product_selector {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 0rem;
+      box-shadow: 0 1px 25px darken(#eee, 3%);
+      & .order_selection_container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0.5rem 0;
+        & .contents {
+          width: 90%;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 0.5rem;
+          & .animated_discount_sign {
+            height: 100px;
+            width: 100px;
+            background: var(--brand-accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            & h3 {
+              color: var(--text-light);
+              font-weight: 700;
+              text-transform: uppercase;
+            }
+            & .animated_bounds {
+              position: absolute;
+              border: 3px dashed var(--text-light);
+              height: 80%;
+              width: 80%;
+              border-radius: 50%;
+              animation: spin 7s linear infinite reverse;
+            }
+          }
+          & .discount_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            & h2 {
+              font-weight: 700;
+              color: var(--brand-accent);
+              margin: 0;
+              text-align: center;
+              font-size: var(--mobile-sub-heading-font-size);
+            }
+            & p {
+              margin: 0;
+              text-align: center;
+              margin-top: 0.5rem;
+              font-size: var(--mobile-standard-text-size);
+            }
+          }
+        }
+      }
+
+      & .selection_header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem 0;
+        & .contents {
+          width: 90%;
+          border-bottom: 1px solid #eee;
+          & h2 {
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+        }
+      }
+      & .product {
+        background: #fff;
+        padding: 0.3rem;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        &:hover {
+          cursor: pointer;
+        }
+        & .product_contents {
+          width: 95%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 1rem 0;
+          gap: 0;
+          & button {
+            display: none;
+          }
+          & .row {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            & .check_box {
+              height: 1.2rem;
+              width: 1.2rem;
+              background: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: 0 0.5rem;
+              border: 2px solid var(--brand-dark);
+              border-radius: 50%;
+            }
+            & .check_box_selected {
+              border: 2px solid var(--brand-dark);
+              background-color: var(--brand-dark);
+              & svg {
+                color: #fff;
+              }
+            }
+            & .img_container {
+              max-width: 8rem;
+              margin: 0.5rem 0;
+              & img {
+                max-width: 100%;
+                max-height: 8rem;
+              }
+            }
+          }
+          & .col {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1rem;
+            width: 100%;
+            & .description {
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+              gap: 1rem;
+              padding: 1rem 0;
+
+              & h2 {
+                font-weight: 700;
+                margin: 0;
+                margin-bottom: 0.5rem;
+              }
+              & h4 {
+                font-weight: 700;
+                margin: 0.5rem 0;
+                font-size: var(--mobile-standard-text-size);
+              }
+              & p {
+                font-weight: 200;
+                font-size: var(--mobile-standard-text-size);
+                margin: 0;
+                margin-bottom: 0.5rem;
+              }
+              & h3 {
+                font-weight: 700;
+                font-size: var(--mobile-standard-text-size);
+                text-align: right;
+                margin: 0;
+                margin-bottom: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+      & .best_deal {
+        background: var(--brand-main-faded);
+        position: relative;
+        overflow: hidden;
+      }
+      & .selected {
+        transition: all 0.3s ease;
+      }
+    }
+    & .sticky_button_container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      padding: 2rem 0;
+      background: #fff;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease;
+      box-shadow: 0 1px 30px #ccc;
+      & button {
+        max-width: 80%;
+      }
+    }
+    & .button_container {
+      width: 100%;
+      display: flex;
+      padding: 2rem 0;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease;
+      & button {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

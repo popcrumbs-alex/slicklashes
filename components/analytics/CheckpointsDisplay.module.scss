@@ -1,0 +1,30 @@
+.checkpoints_display {
+  display: flex;
+  overflow-x: scroll;
+  max-width: 100%;
+  border-top: 1px solid #eee;
+  margin-bottom: 2rem;
+  & button {
+    font-size: 0.7rem;
+    min-width: 9rem;
+    color: var(--background-full);
+    background: transparent;
+    border: 1px solid var(--background-full);
+    transition: all 0.3s ease;
+    &:hover {
+      cursor: pointer;
+      background: var(--background-full);
+      color: #fff;
+    }
+    &:focus,
+    &:active {
+      outline: 0;
+      background: var(--background-full);
+      color: #fff;
+    }
+  }
+  & .active {
+    background: var(--background-full);
+    color: #fff;
+  }
+}

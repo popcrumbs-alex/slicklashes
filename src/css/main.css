@@ -1,0 +1,65 @@
+@import url("https://use.typekit.net/jtm7jin.css");
+:root {
+  --text-color: #555;
+  --text-light: #fff8f0;
+  --text-dark: #08090a;
+  --brand-dark: #08090a;
+  --brand-dark-faded: #080f0f33;
+  --brand-dark-light-fade: #080f0f4b;
+  --brand-main: #ff00ed;
+  --brand-main-faded: #ff00ee27;
+  --brand-accent: #3943b7;
+  --brand-accent-faded: #3943b744;
+  --brand-tint: #d19c1d;
+  --background: #3943b7;
+  --background-full: rgba(122, 182, 241, 1);
+  --background-faded: rgba(122, 182, 241, 0.103);
+  --brand-shade: #eee;
+  --danger: rgba(255, 71, 71, 0.582);
+  --success: #63a088;
+  --success-fades-away: #63a0884b;
+  --analytics-data-1: #129490;
+  --analytics-data-1-faded: #1294906e;
+  --analytics-data-2: #880044;
+  --analytics-data-2-faded: #8800446e;
+  --heading-font-size: 2rem;
+  --sub-heading-font-size: 1.5rem;
+  --standard-text-size: 1.2rem;
+  --primary-button-font-size: 1.5rem;
+  --mobile-heading-font-size: 1.4rem;
+  --mobile-sub-heading-font-size: 1rem;
+  --mobile-standard-text-size: 0.8rem; }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+span,
+li,
+a,
+label,
+input,
+textarea {
+  font-family: muli, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700; }

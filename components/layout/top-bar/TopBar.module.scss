@@ -1,0 +1,29 @@
+.top_bar {
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--brand-dark);
+  & .top_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    & img {
+      max-width: 10rem;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .top_bar {
+    width: 100%;
+    padding: 0.6rem;
+    & .top_inner {
+      & img {
+        max-width: 7rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+[
+  {
+    "customer": {
+      "first_name": "test",
+      "last_name": "osterone",
+      "email": "tedcruzlikesbasketball@hooters.edu"
+    },
+    "line_items": [{ "variant_id": 39555927048358, "quantity": 1 }],
+    "financial_status": "paid",
+    "shipping_address": {
+      "id": "Z2lkOi8vc2hvcGlmeS9NYWlsaW5nQWRkcmVzcy84NTk3Njg5ODI3NDk0P21vZGVsX25hbWU9QWRkcmVzcw==",
+      "address1": "123 Roast Meat Hill Rd, Killingworth, CT 06419, USA",
+      "address2": "123",
+      "city": "Killingworth",
+      "company": "",
+      "country": "United States",
+      "firstName": "test",
+      "formatted": [
+        {
+          "value": "123 Roast Meat Hill Rd, Killingworth, CT 06419, USA",
+          "type": { "name": "String", "kind": "SCALAR" }
+        },
+        { "value": "123", "type": { "name": "String", "kind": "SCALAR" } },
+        {
+          "value": "Killingworth CT 06419",
+          "type": { "name": "String", "kind": "SCALAR" }
+        },
+        {
+          "value": "United States",
+          "type": { "name": "String", "kind": "SCALAR" }
+        }
+      ],
+      "lastName": "osterone",
+      "latitude": 41.3436439,
+      "longitude": -72.54708900000001,
+      "phone": "1234567",
+      "province": "Connecticut",
+      "zip": "06419",
+      "name": "test osterone",
+      "countryCode": "US",
+      "provinceCode": "CT",
+      "type": {
+        "name": "MailingAddress",
+        "kind": "OBJECT",
+        "fieldBaseTypes": {
+          "address1": "String",
+          "address2": "String",
+          "city": "String",
+          "company": "String",
+          "country": "String",
+          "countryCodeV2": "CountryCode",
+          "firstName": "String",
+          "formatted": "String",
+          "id": "ID",
+          "lastName": "String",
+          "latitude": "Float",
+          "longitude": "Float",
+          "name": "String",
+          "phone": "String",
+          "province": "String",
+          "provinceCode": "String",
+          "zip": "String"
+        },
+        "implementsNode": true
+      }
+    },
+    "billing_address": {
+      "id": "Z2lkOi8vc2hvcGlmeS9NYWlsaW5nQWRkcmVzcy84NTk3Njg5ODI3NDk0P21vZGVsX25hbWU9QWRkcmVzcw==",
+      "address1": "123 Roast Meat Hill Rd, Killingworth, CT 06419, USA",
+      "address2": "123",
+      "city": "Killingworth",
+      "company": "",
+      "country": "United States",
+      "firstName": "test",
+      "formatted": [
+        {
+          "value": "123 Roast Meat Hill Rd, Killingworth, CT 06419, USA",
+          "type": { "name": "String", "kind": "SCALAR" }
+        },
+        { "value": "123", "type": { "name": "String", "kind": "SCALAR" } },
+        {
+          "value": "Killingworth CT 06419",
+          "type": { "name": "String", "kind": "SCALAR" }
+        },
+        {
+          "value": "United States",
+          "type": { "name": "String", "kind": "SCALAR" }
+        }
+      ],
+      "lastName": "osterone",
+      "latitude": 41.3436439,
+      "longitude": -72.54708900000001,
+      "phone": "1234567",
+      "province": "Connecticut",
+      "zip": "06419",
+      "name": "test osterone",
+      "countryCode": "US",
+      "provinceCode": "CT",
+      "type": {
+        "name": "MailingAddress",
+        "kind": "OBJECT",
+        "fieldBaseTypes": {
+          "address1": "String",
+          "address2": "String",
+          "city": "String",
+          "company": "String",
+          "country": "String",
+          "countryCodeV2": "CountryCode",
+          "firstName": "String",
+          "formatted": "String",
+          "id": "ID",
+          "lastName": "String",
+          "latitude": "Float",
+          "longitude": "Float",
+          "name": "String",
+          "phone": "String",
+          "province": "String",
+          "provinceCode": "String",
+          "zip": "String"
+        },
+        "implementsNode": true
+      }
+    },
+    "total_tax": "0.00",
+    "tax_lines": [{ "price": "0.00", "rate": "n/a", "title": "Tax" }],
+    "transactions": [
+      { "kind": "sale", "status": "success", "amount": "14.00" }
+    ],
+    "shipping_lines": [
+      {
+        "code": "Custom Slick Kit Funnel",
+        "price": 0,
+        "price_set": {
+          "shop_money": { "amount": 0, "currency_code": "USD" },
+          "presentment_money": { "amount": 0, "currency_code": "USD" }
+        },
+        "source": "shopify",
+        "title": "Custom Slick Kit Funnel"
+      }
+    ],
+    "note_attributes": [
+      { "name": "Stripe Customer ID", "value": "cus_JAWB2wWPIF7px2" },
+      {
+        "name": "Stripe Payment Intent",
+        "value": "pi_1IYBTWJ0FvsBsG7aLPmLayiX"
+      },
+      { "name": "Stripe Charge ID", "value": "ch_1IYBTfJ0FvsBsG7aHC3WqPNf" },
+      { "name": "Stripe Order Source", "value": "lashkit-funnel" }
+    ]
+  },
+
+  {
+    "name": "HTTPError",
+    "timings": {
+      "start": 1616510708522,
+      "socket": 1616510708522,
+      "lookup": 1616510708522,
+      "connect": 1616510708536,
+      "secureConnect": 1616510708551,
+      "upload": 1616510708551,
+      "response": 1616510708895,
+      "end": 1616510708895,
+      "phases": {
+        "wait": 0,
+        "dns": 0,
+        "tcp": 14,
+        "tls": 15,
+        "request": 0,
+        "firstByte": 344,
+        "download": 0,
+        "total": 373
+      }
+    }
+  }
+]

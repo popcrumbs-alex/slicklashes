@@ -1,0 +1,26 @@
+.alert {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+  & .inner {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    & p {
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+}
+
+.danger {
+  background: rgba(255, 71, 71, 0.459);
+  border: 0;
+}
+.success {
+  background: rgba(0, 179, 60, 0.479);
+  border: 0;
+}

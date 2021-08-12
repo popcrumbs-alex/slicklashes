@@ -1,0 +1,31 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 1rem;
+  & input {
+    background: transparent;
+    border: 0;
+    padding: 1rem;
+    border-bottom: 1px solid #fbfbfb;
+    width: 100%;
+    margin-right: 0.5rem;
+    color: #666;
+    &::placeholder {
+      color: #999;
+    }
+  }
+  & button {
+    background: var(--brand-main);
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 1px 10px var(--brand-main);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  filter: drop-shadow(0 1px 5px #eee);
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .bar_inner {
+    width: 40rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    align-items: center;
+    flex-wrap: wrap;
+    & span {
+      background: var(--brand-main);
+      border-radius: 3px;
+      color: #fff;
+      padding: 0.5rem;
+    }
+    & button {
+      background: var(--brand-main);
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+      border: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 15rem;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 1px 0 5px var(--brand-main-faded);
+      }
+    }
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

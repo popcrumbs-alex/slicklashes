@@ -1,0 +1,16 @@
+.loader {
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 3px solid transparent;
+  border-top: 3px solid var(--brand-dark);
+  border-bottom: 3px solid var(--brand-dark);
+  border-radius: 50%;
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,30 @@
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0;
+  & .inner {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .iconContainer {
+      max-width: 20rem;
+      margin: 2rem 0;
+      & svg {
+        color: var(--danger);
+      }
+    }
+    & .heading {
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    & .buttonContainer {
+      max-width: 25rem;
+      margin: 2rem 0;
+    }
+  }
+}

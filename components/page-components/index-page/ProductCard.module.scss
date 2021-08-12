@@ -1,0 +1,271 @@
+.product_card {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 1px 30px #eee;
+  & .card_content {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    & .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(102, 102, 102, 0.158);
+      transition: all 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      z-index: 1;
+      & h3 {
+        font-size: var(--mobile-heading-font-size);
+        color: #fff;
+        font-weight: 700;
+        transition: all 0.5s ease;
+        text-transform: uppercase;
+      }
+      &:hover {
+        background-color: rgba(102, 102, 102, 0.558);
+        cursor: pointer;
+      }
+    }
+    & .overlay_selected {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(102, 102, 102, 0.658);
+      transition: all 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      z-index: 1;
+      & h3 {
+        font-size: var(--mobile-heading-font-size);
+        color: #fff;
+        font-weight: 700;
+        transition: all 0.5s ease;
+        text-transform: uppercase;
+      }
+      &:hover {
+        background-color: rgba(102, 102, 102, 0.558);
+        cursor: pointer;
+      }
+    }
+    & .img_card {
+      display: block;
+      & > img {
+        object-fit: contain;
+      }
+    }
+    & button,
+    & .btn_selected {
+      position: absolute;
+      z-index: 30;
+      bottom: 0;
+      right: 0;
+      margin: 1rem;
+      background: #fff;
+      box-shadow: 0 1px 30px #ccc;
+      border-radius: 50%;
+      color: #ccc;
+      border: 0;
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      transition: all 0.5s ease;
+      animation: deselect 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      z-index: 2;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0;
+        & svg {
+          fill: var(--brand-main);
+        }
+      }
+      &:active,
+      &:focus {
+        outline: 1px solid transparent;
+      }
+      & svg {
+        transition: all 0.3s ease;
+      }
+    }
+    & .btn_selected {
+      box-shadow: 0;
+      animation: pop 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 0;
+        & svg {
+          fill: var(--brand-main);
+        }
+      }
+      &:active,
+      &:focus {
+        outline: 1px solid transparent;
+      }
+      & svg {
+        color: var(--brand-main);
+        fill: var(--brand-main);
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .product_card {
+    width: 100%;
+    box-shadow: 0 1px 30px #eee;
+    margin: 1rem 0;
+    & .card_content {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      & .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(102, 102, 102, 0.158);
+        transition: all 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        z-index: 1;
+        & h3 {
+          font-size: var(--mobile-heading-font-size);
+          color: #fff;
+          font-weight: 700;
+          transition: all 0.5s ease;
+          text-transform: uppercase;
+        }
+        &:hover {
+          background-color: rgba(102, 102, 102, 0.558);
+          cursor: pointer;
+        }
+      }
+      & .overlay_selected {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(102, 102, 102, 0.658);
+        transition: all 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        z-index: 1;
+        & h3 {
+          font-size: var(--mobile-heading-font-size);
+          color: #fff;
+          font-weight: 700;
+          transition: all 0.5s ease;
+          text-transform: uppercase;
+        }
+        &:hover {
+          background-color: rgba(102, 102, 102, 0.558);
+          cursor: pointer;
+        }
+      }
+
+      & button,
+      & .btn_selected {
+        position: absolute;
+        z-index: 30;
+        bottom: 0;
+        right: 0;
+        margin: 1rem;
+        background: #fff;
+        box-shadow: 0 1px 30px #ccc;
+        border-radius: 50%;
+        color: #ccc;
+        border: 0;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        transition: all 0.5s ease;
+        animation: deselect 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0;
+          & svg {
+            fill: var(--brand-main);
+          }
+        }
+        &:active,
+        &:focus {
+          outline: 1px solid transparent;
+        }
+        & svg {
+          transition: all 0.3s ease;
+        }
+      }
+      & .btn_selected {
+        box-shadow: 0;
+        animation: pop 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 0 0;
+          & svg {
+            fill: var(--brand-main);
+          }
+        }
+        &:active,
+        &:focus {
+          outline: 1px solid transparent;
+        }
+        & svg {
+          color: var(--brand-main);
+          fill: var(--brand-main);
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: translateY(2vh) scale(0.8);
+    box-shadow: 0 0 0 2px var(--brand-main-faded);
+  }
+  25% {
+    box-shadow: 0 0 0 4px var(--brand-accent-faded);
+  }
+  50% {
+    transform: translateY(-2vh) scale(1.1);
+    box-shadow: 0 0px 0 6px var(--brand-main);
+  }
+  75% {
+    box-shadow: 0 0px 0 4px var(--brand-accent);
+  }
+  100% {
+    transform: translateY(0vh) scale(1);
+    box-shadow: 0 0 0 2px var(--brand-main-faded);
+  }
+}
+
+@keyframes deselect {
+  0% {
+    transform: translateY(-2vh) scale(1);
+  }
+  50% {
+    background: var(--danger);
+    color: #fff;
+    transform: translateY(2vh) scale(1.1);
+    box-shadow: 0 1px 30px var(--danger);
+  }
+  100% {
+    transform: translateY(0vh) scale(1);
+  }
+}

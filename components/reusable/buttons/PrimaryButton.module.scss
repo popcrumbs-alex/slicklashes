@@ -1,0 +1,11 @@
+@import "../../../sass/mixins";
+
+.primary_btn {
+  @include primary_btn(#3943b7);
+}
+
+@media screen and (max-width: 900px) {
+  .primary_btn {
+    @include primary_btn_mobile(#3943b7);
+  }
+}

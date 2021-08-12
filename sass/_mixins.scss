@@ -1,0 +1,82 @@
+@mixin primary_btn($color) {
+  background-color: var(--brand-main);
+  border-radius: 5px;
+  color: var(--text-light);
+  font-weight: 700;
+  font-size: var(--primary-button-font-size);
+  padding: 1.5rem 2.2rem;
+  border: 5px solid var(--brand-main);
+  border-bottom: 5px solid darken($color, 10%);
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0px 0 5px var(--brand-main-faded);
+    border-bottom: 5px solid var(--brand-main);
+    background-color: lighten($color, 5%);
+  }
+}
+
+@mixin secondary_btn($color) {
+  background-color: var(--success);
+  border-radius: 5px;
+  color: var(--text-light);
+  font-weight: 700;
+  font-size: var(--standard-text-size);
+  padding: 1rem 1.8rem;
+  border: 5px solid var(--success);
+  border-bottom: 5px solid darken($color, 10%);
+  margin: 1rem 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0px 0 5px var(--success-fades-away);
+    border-bottom: 5px solid var(--success);
+    background-color: lighten($color, 5%);
+  }
+}
+
+@mixin primary_btn_mobile($color) {
+  background-color: var(--brand-main);
+  border-radius: 5px;
+  color: var(--text-light);
+  font-weight: 700;
+  font-size: var(--mobile-sub-heading-font-size);
+  padding: 1rem 1.5rem;
+  border: 5px solid var(--brand-main);
+  border-bottom: 5px solid darken($color, 10%);
+  margin: 1rem 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0px 0 5px var(--brand-main-faded);
+    border-bottom: 5px solid var(--brand-main);
+    background-color: lighten($color, 5%);
+  }
+}
+
+@mixin secondary_btn_mobile($color) {
+  background-color: var(--success);
+  border-radius: 5px;
+  color: var(--text-light);
+  font-weight: 700;
+  font-size: var(--mobile-standard-text-size);
+  padding: 0.8rem 1.2rem;
+  border: 2px solid var(--success);
+  border-bottom: 2px solid darken($color, 10%);
+  margin: 1rem 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0px 0 3px var(--success-fades-away);
+    border-bottom: 2px solid var(--success);
+    background-color: lighten($color, 5%);
+  }
+}

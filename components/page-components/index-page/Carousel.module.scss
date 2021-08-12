@@ -1,0 +1,152 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  border: 2px solid #eee;
+  border-bottom: 0;
+  border-radius: 3px;
+  padding: 1rem 0;
+  justify-content: space-around;
+  & .back,
+  & .next {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    & button {
+      background: transparent;
+      border: 0;
+      transition: all 0.3s ease;
+      border-radius: 50%;
+      & svg {
+        color: #999;
+        border-radius: 50%;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+      &:focus,
+      &:active {
+        outline: 1px solid #fff;
+      }
+    }
+  }
+  & .imgs_container {
+    width: 20rem;
+    overflow: hidden;
+    overflow-x: scroll;
+    display: block;
+    height: 100%;
+    scroll-snap-type: x mandatory;
+    &::-webkit-scrollbar {
+      height: 0;
+      visibility: hidden;
+    }
+    & .inner_container {
+      display: grid;
+      grid-template-rows: 1fr;
+      justify-items: center;
+      align-items: center;
+      width: 20rem;
+      transition: all 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+      & img {
+        scroll-snap-align: start;
+        width: 20rem;
+        object-fit: contain;
+        transition: all 0.7s ease;
+      }
+      & iframe {
+        scroll-snap-align: start;
+        width: 20rem;
+        height: 20rem;
+        object-fit: contain;
+        transition: all 0.7s ease;
+      }
+      & .active {
+        opacity: 1;
+        transition: all 0.7s ease;
+      }
+      & .invisible {
+        opacity: 0;
+        transition: all 0.7s ease;
+      }
+    }
+  }
+}
+.img_grid {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 2px solid #eee;
+  padding: 1rem 0;
+  & .active {
+    border: 1px solid #eee;
+  }
+  & img {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    object-fit: contain;
+    height: 70px;
+  }
+  & iframe {
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .carousel {
+    border-bottom: 2px solid #eee;
+    & .back,
+    & .next {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    & .imgs_container {
+      overflow: hidden;
+      overflow-x: scroll;
+      display: block;
+      height: 100%;
+      scroll-snap-type: x mandatory;
+      width: 100%;
+      & .inner_container {
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+        & img {
+          width: 100%;
+        }
+        & iframe {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .img_grid {
+    display: grid;
+    justify-items: stretch;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    & .active {
+      border: 1px solid #eee;
+    }
+    & img {
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+      object-fit: contain;
+      height: 50px;
+    }
+    & iframe {
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+      object-fit: contain;
+      height: 50px;
+    }
+  }
+}
